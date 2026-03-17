@@ -1,5 +1,11 @@
+:root {
+    --primary-color: #800020;
+    --secondary-color: #1F7A55;
+    --font-size-large: 18px;
+}
+
 nav {
-    background-color: rgb(100, 100, 167);
+    background-color: var(--secondary-color);
     padding: 10px;
 }
 
@@ -10,7 +16,7 @@ nav a {
 }
 
 h1 {
-    color: rgb(84, 84, 148);
+    color: var(--primary-color);
 }
 
 img {
@@ -37,6 +43,7 @@ aside {
     padding: 1rem;
     background-color: #eee;
     color: #333;
+    font-size: var(--font-size-large);
     text-align: left;
 }
 
