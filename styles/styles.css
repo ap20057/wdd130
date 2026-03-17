@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 :root {
     --primary-color: #800020;
     --secondary-color: #1F7A55;
@@ -36,13 +42,15 @@ main {
 }
 
 aside {
+    position: relative;
+
     width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgb(0, 0, 0 / 0.2%);
+    margin: var(--margin);
+    border: var(--border);
     /*1*/
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
+    padding: var(--padding);
+    background-color: var(--background-color);
+    color: var(--colorcolor);
     font-size: var(--font-size-large);
     text-align: left;
 }
@@ -53,12 +61,23 @@ aside img {
 }
 
 main img {
+    /*added the float to the right declaration*/
     width: 150px;
     height: auto;
+    float: right;
 }
 
 footer {
     margin-top: 15px;
     border-top: 1px solid #000;
     text-align: left;
+}
+
+/*Class Selector*/
+.box {
+    --margin: 1rem;
+    --border: 1px solid rgb(0, 0, 0 / 0.10%);
+    --padding: 1rem;
+    --background-color: #ddd;
+    --color: #000;
 }
