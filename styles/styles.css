@@ -7,12 +7,12 @@
 :root {
     --primary-color: #800020;
     --secondary-color: #1F7A55;
-    --font-size-large: 18px;
+    --font-size-large: 14px;
 }
 
 nav {
     background-color: var(--secondary-color);
-    padding: 10px;
+    padding: 8px;
 }
 
 nav a {
@@ -55,14 +55,18 @@ aside {
     text-align: left;
 }
 
+aside h2 {
+    position: absolute;
+}
+
 aside img {
-    width: 200px;
+    width: 250px;
     height: auto;
 }
 
 main img {
     /*added the float to the right declaration*/
-    width: 150px;
+    width: 200px;
     height: auto;
     float: right;
 }
