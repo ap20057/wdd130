@@ -1,0 +1,172 @@
+/*Author: Marcos Alas
+Rafting Site Contact Us Page*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e6e6e6;
+    color: #333;
+}
+
+header {
+    background-color: #b6a6d9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+
+.logo {
+    width: 100px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    background-color: #ddd;
+    padding: 10px 20px;
+    border: 1px solid #777;
+    border-radius: 5px;
+    color: black;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #bbb;
+}
+
+.company-info {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.company-info h1 {
+    margin-bottom: 10px;
+}
+
+.contact-layout {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 20px;
+}
+
+.map iframe {
+    width: 400px;
+    height: 300px;
+    border: 1px solid #777;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+input,
+textarea {
+    padding: 8px;
+    border: 1px solid #777;
+    border-radius: 4px;
+}
+
+textarea {
+    height: 100px;
+}
+
+fieldset {
+    border: 1px solid #777;
+    padding: 10px;
+}
+
+button {
+    padding: 12px;
+    border: none;
+    background-color: #b6a6d9;
+    color: black;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #9d8acb;
+}
+
+.employees {
+    margin: 30px;
+    padding: 20px;
+    border: 1px solid #777;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+.employee-grid {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.employee-grid img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border: 1px solid #777;
+}
+
+figcaption {
+    margin-top: 8px;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #b6a6d9;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.socialmedia {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.socialmedia img {
+    width: 25px;
+    margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+    .contact-layout {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .employee-grid {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .map iframe {
+        width: 100%;
+    }
+}
